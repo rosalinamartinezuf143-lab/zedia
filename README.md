@@ -1,1 +1,3 @@
 # zedia
+
+Static deployment trigger.
