@@ -1,0 +1,19 @@
+/* Device-friendly overrides for the published static site. */
+html { -webkit-text-size-adjust: 100%; }
+body { min-width: 320px; overflow-x: hidden; }
+button, input, select, textarea { max-width: 100%; }
+
+@media (max-width: 640px) {
+  .sticky > div {
+    min-height: 3.5rem;
+    height: auto;
+    gap: 0.5rem;
+    padding: 0.5rem 0.75rem;
+  }
+
+  .sticky h1 { font-size: 1rem; }
+  .sticky h1 span, .sticky h1 + span { display: none; }
+  main, section { min-width: 0; }
+  table { min-width: 36rem; }
+  .overflow-x-auto, [class*="overflow-x-auto"] { -webkit-overflow-scrolling: touch; }
+}
